@@ -1,0 +1,92 @@
+<!--Link the form.css to this page-->
+<!--Link the main.js to this page-->
+
+<!-- This is the form page of the application -->
+<!--This page is in charge of sending DATA to our firebase firestore, skolly is expected to work closely with the person-->
+<!--This page should have a back button similar to that in android, the back button will retun users to the home page -->
+<!Doctype html>
+<html>
+	<head>
+
+		<title>TOPNOTCH EUPHORIA</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <link rel="stylesheet" type="text/css" href="styles/form.css">
+        <link rel="stylesheet" type="text/css" href="styles/font/css/font-awesome.min.css">
+
+	</head>
+
+    <body>
+
+        <section>
+            <div class="row back"><!--The back to home navigation icon here-->
+                <a href="index.html" class="icon fa-arrow-circle-left" ></a>
+            </div>
+
+            <div class="row">
+
+                <p class="col-md-12 header">Service Request Form</p>
+
+                <form class="col-md-12 form"><!--The form should be at the center with a purple background taking the remaining part of the screen-->
+
+                    <div class="input_container">
+                        <span class="input_icon fa-user-o"></span>
+                        <input type="text" name="fullname" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="input_container">
+                        <span class="input_icon fa-bell-o"></span>                            
+                        <input type="text" name="eventtype" placeholder="Event Type e.g. Wedding, Conference etc" required>	
+                    </div>
+
+                    <div class="input_container">
+                        <span class="input_icon fa-map-marker"></span>
+                        <input type="text" name="address" placeholder="Event Location" required>
+                    </div>
+
+                    <div class="input_container">                            
+                        <span class="input_icon fa-calendar"></span>
+                        <input type="text" name="eventdate" placeholder="Event Date (dd/mm/yyyy)" maxlength="10" required>
+                    </div>
+
+                    <div class="input_container">    
+                        <span class="input_icon fa-phone"></span>
+                        <input type="text" name="phonenumber" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="input_container">                            
+                        <span class="input_icon fa-envelope-o"></span>
+                        <input type="text" name="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="checkbox">
+
+                        <p>Required Service(s):</p>
+
+                        
+                        <input type="checkbox" name="servicetype1" value="outdoorcatering">Outdoor Catering<br>
+                        <input type="checkbox" name="servicetype2" value="indoorcatering">Indoor Catering<br>
+                        <input type="checkbox" name="servicetype3" value="EventManagementandplanning">Event Management and Planning<br>
+                        <input type="checkbox" name="servicetype4" value="EventUshering">Event Ushering<br>
+                
+                    </div>
+
+                    <div class="button"><button type="submit"><a href="">submit</a></button></div>
+                    
+                </form>
+            </div>
+
+        </section>
+
+        <footer  class="row footer">
+
+            <div class="col-md-12">
+                <p>developed with love by DSC FUTA</p>
+            </div>
+			
+		</footer>
+
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+
+</html>
